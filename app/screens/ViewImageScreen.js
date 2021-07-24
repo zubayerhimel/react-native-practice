@@ -1,5 +1,6 @@
 import React from "react";
 import { Image, StyleSheet, View } from "react-native";
+import {} from "@expo/vector-icons";
 
 function ViewImageScreen() {
   return (
