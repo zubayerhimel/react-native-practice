@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Platform, StatusBar, Dimensions, View } from "react-native";
 import AccountScreen from "./app/screens/AccountScreen";
 import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
+import ListingScreen from "./app/screens/ListingScreen";
 import MessagesScreen from "./app/screens/MessagesScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
@@ -11,7 +12,7 @@ import ListItem from "./components/ListItem";
 import Screen from "./components/Screen";
 
 export default function App() {
-  return <AccountScreen />;
+  return <ListingScreen />;
 }
 
 const styles = StyleSheet.create({
