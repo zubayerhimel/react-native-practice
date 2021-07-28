@@ -3,6 +3,7 @@ import { StyleSheet, Platform, StatusBar, Dimensions, View, TextInput } from "re
 import AccountScreen from "./app/screens/AccountScreen";
 import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
 import ListingScreen from "./app/screens/ListingScreen";
+import LoginScreen from "./app/screens/LoginScreen";
 import MessagesScreen from "./app/screens/MessagesScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
@@ -13,21 +14,8 @@ import Icon from "./components/Icon";
 import ListItem from "./components/ListItem";
 import Screen from "./components/Screen";
 
-const categories = [
-  { label: "Furniture", value: 1 },
-  { label: "Clothing", value: 2 },
-  { label: "Cameras", value: 3 },
-];
-
 export default function App() {
-  const [category, setCategory] = useState("");
-
-  return (
-    <Screen>
-      <AppPicker selectedItem={category} onSelectItem={(item) => setCategory(item)} items={categories} icon="apps" placeholder="Category" />
-      <AppTextInput placeholder="Enter name" icon="email" />
-    </Screen>
-  );
+  return <LoginScreen />;
 }
 
 const styles = StyleSheet.create({
